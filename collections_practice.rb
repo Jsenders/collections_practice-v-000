@@ -37,3 +37,13 @@ end
 def sum_array(integers)
   integers.inject{|sum, n| sum + n}
 end
+
+def add_s(array)
+  array.collect do |string, index|
+    if index == 1
+      string
+    else
+      string << "s"
+    end
+  end
+end
