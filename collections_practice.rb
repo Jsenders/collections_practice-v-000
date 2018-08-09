@@ -6,17 +6,13 @@ def sort_array_desc(integers)
   integers.sort.reverse
 end
 
-def sort_array_char_count
+def sort_array_char_count(strings)
+  strings.sort {|left, right| left.length <=> right.length}
 end
 
-def swap_elements(array)
-  array.sort do |a, b|
-    if a = b
-      0
-    elsif a < b
-      -1
-    elsif a > b
-      1
-    end
-  end
+def swap_elements(strings)
+  strings[1], strings[2] = strings[2], strings[1]
+  return strings
 end
+
+
