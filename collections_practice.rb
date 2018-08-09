@@ -19,3 +19,8 @@ def reverse_array(integers)
   new_array = integers.reverse
   new_array
 end
+
+def find_a(array)
+  array.select{|string| string.start_with?("a")}
+end
+
